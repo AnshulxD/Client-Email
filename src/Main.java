@@ -84,3 +84,24 @@ class Main {
              java.lang.String User1=input.readLine();
              System.out.print("Password: ");
              java.lang.String Pass=input.readLine();
+              FileReader fout=new FileReader(User1+"@gmail.com");
+             BufferedReader bout=new BufferedReader(fout);
+
+             java.lang.String data=bout.readLine();
+             if(Pass.equals(data))
+             {
+                 System.out.println("Logged On!");
+
+                 System.out.print("To:   ");
+                 java.lang.String User=input.readLine();
+
+                 System.out.print("From:   ");
+                 java.lang.String From=input.readLine();
+                 System.out.println("");
+                 System.out.println("Letter Content:");
+                 java.lang.String Body=input.readLine();
+
+                 FileWriter fin=new FileWriter(User);
+                 BufferedWriter bin=new BufferedWriter(fin);
+                 PrintWriter pin=new PrintWriter(bin);
+                 System.out.println("");
