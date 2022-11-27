@@ -66,4 +66,21 @@ class Main {
                      b.close();
                      bout.close();
                  }
+             }else
+             {
+                 System.out.println("Wrong password!");
              }
+         }
+
+         else
+         if(ch.equals("compose"))
+         {
+
+             InputStreamReader reader=new InputStreamReader(System.in);
+             BufferedReader input=new BufferedReader(reader);
+             Calendar c=Calendar.getInstance();
+
+             System.out.print("Username: ");
+             java.lang.String User1=input.readLine();
+             System.out.print("Password: ");
+             java.lang.String Pass=input.readLine();
