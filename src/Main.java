@@ -9,6 +9,30 @@ class Main {
          System.out.println("Welcome To MIT Email Services ");
          System.out.print("Enter function ( signup, login, compose):");
          String ch = B.readLine();
+          
+           if (ch.equals("signup")) {
+             InputStreamReader reader = new InputStreamReader(System.in);
+             BufferedReader input = new BufferedReader(reader);
+             System.out.print("Username@gmail.com:");
+             java.lang.String User = input.readLine();
+             System.out.print("Password: ");
+             java.lang.String Pass = input.readLine();
+
+             System.out.println("New ID Created Successfully!");
+
+             FileWriter fout = new FileWriter(User + "@gmail.com");
+             BufferedWriter bout = new BufferedWriter(fout);
+             PrintWriter pout = new PrintWriter(bout);
+             pout.println(Pass);
+
+             FileWriter fot = new FileWriter(User);
+             BufferedWriter bot = new BufferedWriter(fot);
+             PrintWriter pot = new PrintWriter(bot);
+
+             pout.close();
+             bout.close();
+             pout.close();
+         } 
 
 
 
