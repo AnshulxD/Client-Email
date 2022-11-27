@@ -105,3 +105,22 @@ class Main {
                  BufferedWriter bin=new BufferedWriter(fin);
                  PrintWriter pin=new PrintWriter(bin);
                  System.out.println("");
+                  pin.println("Time:"+c.get(Calendar.HOUR)+":"+c.get(Calendar.MINUTE)+" PM");
+                 pin.println("From "+From+",");
+                 pin.println(Body);
+                 System.out.println("");
+                 System.out.println("Mail sent!");
+                 bout.close();
+                 pin.close();
+                 bin.close();
+                 pin.close();
+             }
+             else
+             {
+                 System.out.println("Wrong password!");
+             }
+
+
+         }
+         else
+             System.out.println("Wrong choice!");
